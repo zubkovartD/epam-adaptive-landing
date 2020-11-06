@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serifs;
+}
+header {
+  width: 100vw;
+  height: 80px;
+  background-color: #99ccff;
+}
+.header-wrapper {
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.container {
+  cursor: pointer;
+
+}
+  .b1, .b2, .b3 {
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px 0;
+    display: none;
+}
+
+.header-wrapper a {
+  color: white;
+  text-decoration: none;
+}
+.header-left {
+  font-size: 30px;
+}
+.header-left p a span {
+  color: #162b4d;
+}
+.header-right ul {
+  height: 80px;
+  align-items: center;
+}
+.header-right ul li {
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 10px; 
+  
+}
+.header-right ul li a {
+  display: block;
+  height: 26px;
+  padding: 1.7rem 1rem;
+} 
+.header-right ul li a:hover {
+  background-color: #162b4d;
+}
+.image {
+  background-image: url('../img/section1.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.image-wrapper p {
+  color: white;
+  padding-left: 50px;
+}
+.image-wrapper p:first-of-type {
+  padding-top: 50vh;
+  font-size: 25px;
+  font-weight: lighter;
+}
+.image-wrapper p:last-of-type {
+  padding-top: 30px;
+}
+.content {
+  max-width: 1280px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color:  #484848;
+}
+.posts-group {
+  margin-top: 30px;
+  width:60%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.post {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.post-img {
+  width: 50%;
+}
+.post-img img{
+  width: 100%;
+  height: 100%;
+}
+.post-text {
+  width: 45%;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.post-text:hover {
+  opacity: 0.7;
+}
+.post-text h3 {
+  font-weight: normal;
+  font-size: 25px;
+}
+.post-text p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+.post:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.post:first-of-type {
+  background-color: #F3D250;
+}
+.post:nth-of-type(2n+2) {
+  background-color: #8D8741;
+}
+.post:nth-of-type(3n+3) {
+  background-color: #659DBD;
+}
+.post:last-of-type {
+  background-color: #DAAD86;
+}
+.post-date {
+  width:5%;
+  text-align: center;
+}
+.num {
+  font-size: 30px;
+  padding-top: 10px;
+}
+.month {
+  font-size: 18px;
+}
+.news {
+  width: 38%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.news-item {
+  border: 2px solid #000;
+}
+.news-item:first-of-type {
+  margin-bottom: 30px;
+}
+.news-item-img img {
+  width: 100%;
+  height: 100%;
+}
+.news-item-text {
+  padding-top: 30px;
+  padding-left: 15px;
+}
+.news-item-text h3 {
+  font-weight: normal;
+}
+.news-item-text p {
+  padding-top: 30px;
+}
+.news-item-text button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.news-item-text button:hover {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+footer {
+  width: 100vw;
+  height: 80px;
+  background-color: #162b4d;
+}
+.footer-wrapper {
+  font-size: 13px;
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .post-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .post:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .post-img {
+    width: 100%;
+  }
+  .post-text {
+    width: 100%;
+  }
+  .post img {
+    width:100%;
+  }
+  .post-date {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .content {
+    display: block;
+    flex-direction: column;    
+  }
+  .posts-group {
+    width: 100%;
+    border: 1px solid #000;
+  }
+  .post {
+    flex-direction: column;
+  }
+  .post:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .post-img {
+    width: 100%;
+  }
+  .post-text {
+    width: 100%;
+  }
+  .post img {
+    width:100%;
+  }
+  .post-date {
+    width: 100%;
+  }
+  .news {
+    width: 100%;
+  }
+}
+
